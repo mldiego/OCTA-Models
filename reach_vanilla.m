@@ -84,4 +84,6 @@ for i=1:length(rF)
 
     end
 end
+
+save("vanilla_rT.mat", "rT")
         
