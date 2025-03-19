@@ -3,7 +3,7 @@
 % model
 % betti_oo = importNetworkFromONNX("vanilla_oo.onnx");
 load("vanilla_best.mat");
-net = matlab2nnv(betti_oo);
+% net = matlab2nnv(betti_oo);
 
 % Data
 % x = readNPY('vanilla_input.npy');

@@ -1,9 +1,9 @@
 %% Attempt reachability
 
 % model
-% betti_oo = importNetworkFromONNX("vanilla_oo.onnx");
+% betti_oo = importNetworkFromONNX("betti_oo.onnx");
 load("betti_best.mat");
-net = matlab2nnv(betti_oo);
+% net = matlab2nnv(betti_oo);
 
 % Data
 % x = readNPY('vanilla_input.npy');
