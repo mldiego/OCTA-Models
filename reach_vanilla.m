@@ -73,7 +73,7 @@ reachOptions = struct;
 reachOptions.reachMethod = "relax-star-range";
 
 for i=1:length(rF)
-    for j=1:length(epsilon)
+    for j=1:length(EPSILON)
         reachOptions.relaxFactor = rF(i);
         epsilon = EPSILON(j);
         X = ImageStar(x-epsilon, x+epsilon);
