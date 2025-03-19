@@ -29,4 +29,8 @@
 betti_oo = importNetworkFromONNX("betti_oo.onnx");
 vanilla_oo = importNetworkFromONNX("vanilla_oo.onnx");
 
+% Save models for easier work on ACCRE
+save("betti_best.mat","betti_oo", "-v7.3")
+save("vanilla_best.mat","betti_oo", "-v7.3")
+
 % YAY!! These work!!
