@@ -27,13 +27,13 @@ load("betti_traces.mat");
 % end
 
 %% Reach
-% X = ImageStar(xb, xb);
-% 
-% reachOptions.reachMethod = "relax-star-range";
-% reachOptions.relaxFactor = 1;
-% 
-% Y = net.reach(X, reachOptions);
-% [lb,ub] = Y.estimateRanges;
+X = ImageStar(x, x);
+
+reachOptions.reachMethod = "relax-star-range";
+reachOptions.relaxFactor = 1;
+
+Y = net.reach(X, reachOptions);
+[lb,ub] = Y.estimateRanges;
 
 
 % Are we importing the same model?
@@ -64,7 +64,8 @@ load("betti_traces.mat");
 
 %% Let's evaluate scalability with epsilon size and method
 
-rF = [0,0.25,0.5,0.75,1];
+% rF = [0,0.25,0.5,0.75,1];
+rF = 1;
 EPSILON = [0.0001, 0.0002, 0.0005, 0.001, 0.002, 0.005, 0.01];
 
 rT = zeros(length(rF), length(EPSILON));
