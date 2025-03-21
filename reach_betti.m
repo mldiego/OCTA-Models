@@ -83,6 +83,8 @@ for i=1:length(rF)
         net.reach(X, reachOptions);
         rT(i,j) = toc(t);
 
+	disp("This one is done");
+
     end
 end
 
